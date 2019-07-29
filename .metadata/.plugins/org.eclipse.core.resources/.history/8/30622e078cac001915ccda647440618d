@@ -1,0 +1,16 @@
+package com.stock.mvc.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.stock.mvc.dao.IEmployeurDAO;
+import com.stock.mvc.entites.Employeur;
+@SuppressWarnings("unchecked")
+public class EmployeurDAOImpl extends GenericDAOImpl<Employeur> implements IEmployeurDAO {
+	
+}

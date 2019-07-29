@@ -1,0 +1,103 @@
+package com.stock.mvc.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.stock.mvc.dao.IEmployeurDAO;
+import com.stock.mvc.entites.Employeur;
+@SuppressWarnings("unchecked")
+public class EmployeurDAOImpl implements IEmployeurDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+	
+
+	private Class<Employeur> type;
+	
+
+	public EmployeurDAOImpl() {
+		super();
+		Type f=getClass().getGenericSuperclass();//On récupère la superclasse c'est à dire la classe père
+		ParameterizedType pt= (ParameterizedType)f;//On crée l'objet pt en récupérant les paramètres de t
+		type= (Class<Employeur>)pt.getActualTypeArguments()[0];
+		
+	}
+	
+	
+
+	public EmployeurDAOImpl(EntityManager em, Class<Employeur> type) {
+		super();
+		this.em = em;
+		this.type = type;
+	}
+
+
+
+	@Override
+	public Employeur save(Employeur entity) {
+		em.persist(entity);
+		return null;
+	}
+
+	@Override
+	public Employeur update(Employeur entity) {
+		// TODO Auto-generated method stub
+		return em.merge(entity);
+	}
+
+	@Override
+	public List<Employeur> selectAll() {
+		Query query=em.createQuery("select t from"+type.getSimpleName()+"t");
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Employeur> selectAll(String sortField, String sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employeur getById(Long id) {
+		return em.find(type,id);
+	}
+
+	@Override
+	public void remove(Long id) {
+		Employeur tab=em.getReference(type, id);
+		em.remove(tab);
+		
+	}
+
+	@Override
+	public Employeur findOne(String paramName, Object[] paramValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employeur findOne(String[] paramNames, Object[] paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employeur findOne(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public int findCountBy(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,107 @@
+package com.stock.mvc.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.stock.mvc.dao.IRemBruteDAO;
+import com.stock.mvc.entites.RemBrute;
+@SuppressWarnings("unchecked")
+public class RemBruteDAOImpl implements IRemBruteDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+	
+
+	private Class<RemBrute> type;
+	
+
+	public RemBruteDAOImpl() {
+		super();
+		Type f=getClass().getGenericSuperclass();//On récupère la superclasse c'est à dire la classe père
+		ParameterizedType pt= (ParameterizedType)f;//On crée l'objet pt en récupérant les paramètres de t
+		type= (Class<RemBrute>)pt.getActualTypeArguments()[0];
+		
+	}
+	
+	
+
+	public RemBruteDAOImpl(EntityManager em, Class<RemBrute> type) {
+		super();
+		this.em = em;
+		this.type = type;
+	}
+
+
+
+	@Override
+	public RemBrute save(RemBrute entity) {
+		em.persist(entity);
+		return null;
+	}
+
+	@Override
+	public RemBrute update(RemBrute entity) {
+		// TODO Auto-generated method stub
+		return em.merge(entity);
+	}
+
+	@Override
+	public List<RemBrute> selectAll() {
+		Query query=em.createQuery("select t from"+type.getSimpleName()+"t");
+		return query.getResultList();
+	}
+
+	@Override
+	public List<RemBrute> selectAll(String sortField, String sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RemBrute getById(Long id) {
+		return em.find(type,id);
+	}
+
+	@Override
+	public void remove(Long id) {
+		RemBrute tab=em.getReference(type, id);
+		em.remove(tab);
+		
+	}
+
+	@Override
+	public RemBrute findOne(String paramName, Object[] paramValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RemBrute findOne(String[] paramNames, Object[] paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RemBrute findOne(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public int findCountBy(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	
+
+}

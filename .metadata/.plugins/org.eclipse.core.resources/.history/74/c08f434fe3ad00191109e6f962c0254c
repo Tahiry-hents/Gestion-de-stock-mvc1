@@ -1,0 +1,9 @@
+
+######Locale######
+locale.fr=Français
+locale.en=English
+#####Commons#####
+common.dashboard=Tableau de bord
+common.salarie=Salarié
+common.employeur=Employeur
+commmon.remunerationbrute=Rémunération brute

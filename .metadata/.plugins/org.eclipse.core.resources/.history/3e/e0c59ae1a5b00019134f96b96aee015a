@@ -1,0 +1,6 @@
+package com.stock.mvc.entites;
+
+public class SuccursaleType1 {
+	private int idSuccT1;
+
+}

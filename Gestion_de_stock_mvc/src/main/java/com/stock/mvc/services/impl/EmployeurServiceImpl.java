@@ -1,0 +1,80 @@
+package com.stock.mvc.services.impl;
+
+import java.util.List;
+
+import com.stock.mvc.dao.IEmployeurDAO;
+import com.stock.mvc.entites.Employeur;
+
+import com.stock.mvc.services.IEmployeurService;
+
+public class EmployeurServiceImpl implements IEmployeurService {
+	
+	private IEmployeurDAO dao;
+	
+	
+
+	public void setDao(IEmployeurDAO dao) {
+		this.dao = dao;
+	}
+
+	@Override
+	public Employeur save(Employeur entity) {
+		return dao.save(entity);
+	}
+
+	@Override
+	public Employeur update(Employeur entity) {
+		return dao.update(entity);
+	}
+
+	@Override
+	public List<Employeur> selectAll() {
+		return dao.selectAll();
+				
+	}
+
+	@Override
+	public List<Employeur> selectAll(String sortField, String sort) {
+		return dao.selectAll(sortField,sort);
+		
+	}
+
+	@Override
+	public Employeur getById(Long id) {
+		return dao.getById(id);
+	}
+
+	@Override
+	public void remove(Long id) {
+		dao.remove(id);
+		
+	}
+
+	@Override
+	public Employeur findOne(String paramName, Object[] paramValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public Employeur findOne(String[] paramNames, Object[] paramValues) {
+		
+		return dao.findOne(paramNames, paramValues);
+	}
+
+	@Override
+	public Employeur findOne(String paramName, String paramValues) {
+		
+		return dao.findOne(paramName, paramValues);
+	}
+
+	@Override
+	public int findCountBy(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return dao.findCountBy(paramName, paramValues);
+	}
+             
+}
+            
+

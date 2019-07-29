@@ -1,0 +1,7 @@
+package com.stock.mvc.services.impl;
+
+import com.stock.mvc.services.ISalaireService;
+
+public class SalaireServiceImpl implements ISalaireService {
+
+}

@@ -1,0 +1,6 @@
+package com.stock.mvc.dao.impl;
+
+
+public class SalarieDAOImpl extends GenericDAOImpl<Salarie> implements ISalarieDAO {
+	
+}

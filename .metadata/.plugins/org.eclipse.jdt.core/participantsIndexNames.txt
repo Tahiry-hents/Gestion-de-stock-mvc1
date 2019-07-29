@@ -1,0 +1,59 @@
+INDEX VERSION 1.131
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1706305223.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\279144557.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\783120011.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3923420763.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3472719924.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\489938143.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3125599173.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3084676983.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3314684803.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\129260981.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1269665776.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4157571418.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1490980673.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3717103749.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1985670606.index
+\Activite_Or_Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\398059840.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1747227253.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2906762714.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\584458145.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\335817425.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\819721887.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1352606032.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1391848550.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\395103142.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4200543720.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1037989434.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\83872535.index
+\Gestion_de_stock_mvc\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3658151067.index
+\Projet Calev Devises\src\main\java
+C:\Users\IN-TL-055\Documents\workspace-sts-3.9.8.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\853257044.index
+\Gestion_de_stock_mvc\src\main\java

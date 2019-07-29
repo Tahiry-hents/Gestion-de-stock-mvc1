@@ -1,0 +1,96 @@
+package com.stock.mvc.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.stock.mvc.dao.ISanteDAO;
+import com.stock.mvc.entites.Sante;
+@SuppressWarnings("unchecked")
+public class SanteDAOImpl implements ISanteDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+	
+
+	private Class<Sante> type;
+	
+
+	public SanteDAOImpl() {
+		super();
+		Type f=getClass().getGenericSuperclass();//On récupère la superclasse c'est à dire la classe père
+		ParameterizedType pt= (ParameterizedType)f;//On crée l'objet pt en récupérant les paramètres de t
+		type= (Class<Sante>)pt.getActualTypeArguments()[0];
+		
+	}
+	
+	
+
+	public SanteDAOImpl(EntityManager em, Class<Sante> type) {
+		super();
+		this.em = em;
+		this.type = type;
+	}
+
+
+
+	@Override
+	public Sante save(Sante entity) {
+		em.persist(entity);
+		return null;
+	}
+
+	@Override
+	public Sante update(Sante entity) {
+		// TODO Auto-generated method stub
+		return em.merge(entity);
+	}
+
+	@Override
+	public List<Sante> selectAll() {
+		Query query=em.createQuery("select t from"+type.getSimpleName()+"t");
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Sante> selectAll(String sortField, String sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Sante getById(Long id) {
+		return em.find(type,id);
+	}
+
+	@Override
+	public void remove(Long id) {
+		Sante tab=em.getReference(type, id);
+		em.remove(tab);
+		
+	}
+
+	@Override
+	public Sante findOne(String paramName, Object[] paramValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Sante findOne(String[] paramNames, Object[] paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Sante findOne(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+

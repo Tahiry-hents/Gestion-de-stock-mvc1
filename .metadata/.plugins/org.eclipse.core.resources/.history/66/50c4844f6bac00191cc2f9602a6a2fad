@@ -1,0 +1,96 @@
+package com.stock.mvc.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.stock.mvc.dao.IRetraiteDAO;
+import com.stock.mvc.entites.Retraite;
+@SuppressWarnings("unchecked")
+public class RetraiteDAOImpl implements IRetraiteDAO {
+	
+	@PersistenceContext
+	EntityManager em;
+	
+
+	private Class<Retraite> type;
+	
+
+	public RetraiteDAOImpl() {
+		super();
+		Type f=getClass().getGenericSuperclass();//On récupère la superclasse c'est à dire la classe père
+		ParameterizedType pt= (ParameterizedType)f;//On crée l'objet pt en récupérant les paramètres de t
+		type= (Class<Retraite>)pt.getActualTypeArguments()[0];
+		
+	}
+	
+	
+
+	public RetraiteDAOImpl(EntityManager em, Class<Retraite> type) {
+		super();
+		this.em = em;
+		this.type = type;
+	}
+
+
+
+	@Override
+	public Retraite save(Retraite entity) {
+		em.persist(entity);
+		return null;
+	}
+
+	@Override
+	public Retraite update(Retraite entity) {
+		// TODO Auto-generated method stub
+		return em.merge(entity);
+	}
+
+	@Override
+	public List<Retraite> selectAll() {
+		Query query=em.createQuery("select t from"+type.getSimpleName()+"t");
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Retraite> selectAll(String sortField, String sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Retraite getById(Long id) {
+		return em.find(type,id);
+	}
+
+	@Override
+	public void remove(Long id) {
+		Retraite tab=em.getReference(type, id);
+		em.remove(tab);
+		
+	}
+
+	@Override
+	public Retraite findOne(String paramName, Object[] paramValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Retraite findOne(String[] paramNames, Object[] paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Retraite findOne(String paramName, String paramValues) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+

@@ -1,0 +1,6 @@
+package com.stock.mvc.dao.impl;
+
+
+public class SanteDAOImpl extends GenericDAOImpl<Sante> implements ISanteDAO {
+	
+}
